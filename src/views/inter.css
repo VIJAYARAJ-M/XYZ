@@ -1,0 +1,51 @@
+.cd{
+    width: 170px;
+}
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+.css-1s2u09g-control{
+    /* background-color: #3759B2 !important; */
+    /* box-shadow:inset 2px 2px 5px #ffffff, inset -3px -3px 7px #bbbec3; */
+    /* background-image: linear-gradient(to right, #21507B 0%, #88AFDD 100%) !important; */
+    background-color: #19335A !important;
+    border: 0px !important;
+    color: white;
+}
+.css-12jo7m5{
+    color: black !important;
+    
+}
+.css-14el2xx-placeholder{
+    color: white !important;
+    
+}
+.css-2613qy-menu{
+/* background-color: rgb(51, 0, 255) !important; */
+z-index: 10 !important;
+
+}
+#react-select-2-listbox, #react-select-3-listbox{
+    /* background-color: aqua !important;  */
+    z-index: 5 !important;
+}
+.Button{
+border: none;
+    margin-top: 32px;
+    margin-left: 30px;
+    height: 37px;
+    background-color: #19335A;
+    color: white;
+}
+@media (min-width: 768px){
+.main-content .container-fluid, .main-content .container-sm, .main-content .container-md, .main-content .container-lg, .main-content .container-xl {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.css-1r4vtzz{
+    background-color:#19335A !important ;
+    color: white !important;
+}
