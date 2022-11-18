@@ -33,7 +33,7 @@ export default function Jobs(){
         <div>
             <div>
               
-              <h1 className="text-white">Jobs Page</h1>
+              <h1 className="text-white">Jobs Pages</h1>
               <Row className="mt-2">
                 <Col lg={4} className="">
                 <Card className="p-1" style={{backgroundColor:'#002151'}}>
