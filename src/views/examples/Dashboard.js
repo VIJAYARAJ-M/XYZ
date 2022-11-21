@@ -609,6 +609,55 @@ const departmentoptions = {
                   }
                 }]
               }
+const card =[
+  {
+    h5:"cv",
+    h4:"1st",
+  },
+  {
+    h5:"cv",
+    h4:"1st",
+  },
+]
+const renderCard = (card, index) => {
+                return (
+                  <Col  className="" >
+                    <Card className="" style={{backgroundImage:"linear-gradient(to right, #FFFBFF ,#D4D9DD )",
+                    height:"200px",width:"200px",borderRadius:"50%",border:"  solid #D9D9D9",
+                    /*borderImage:" linear-gradient(to right, #bd1d58, #40db19)10",*/
+                    boxShadow:"8px 8px 10px 0px rgb( 120 120 120/ 80%), -8px -8px 10px 3px rgb(249 250 252/ 100%)"}}>
+                        <Row className="p-4">
+                            <Col>
+                            <Card  style={{backgroundImage:"linear-gradient(to right,#D4D9DD, #FFFBFF  )",height:"150px",width:"150px",borderRadius:"50%",
+                            border:"solid #D1D2D3"}}>
+                                <Row className="p-3">
+                                    <Col>
+                                    <Card className="text-center" key={index} style={{backgroundColor:"#EDEEF0",border:"solid #F2CE3E",
+                                    height:"120px",width:"120px",borderRadius:"50%",marginLeft:"-4px",marginTop:"-4px"}}>
+                                        <CardBody className="  ">
+                                            <Row className="justify-content-center d-flex align-items-center"> 
+                                                <span><BsFillPersonFill size="2rem"/></span>
+                                            </Row>
+                                              <Row className="justify-content-center d-flex align-items-center">
+                                              <h5>{card.h5}</h5>
+                                              </Row>
+                                            <Row className="justify-content-center d-flex align-items-center">
+                                              <h4>{card.h4}</h4>
+                                            </Row>
+                                            
+                                        </CardBody>
+                                    </Card>
+                                    </Col>
+                                </Row>
+                            </Card>
+                            </Col>
+
+                        </Row>
+                    </Card>
+                  </Col>
+                );
+              };
+              
             
                        
               
@@ -873,6 +922,96 @@ export default function Dash(){
                         
                     </Card>
                 </Col>
+                <Col className="p-1">
+                <Card className="p-1" style={{backgroundColor: "#002151"}}>
+                 <Row>
+                  <Col>
+                    <Card className="p-4" 
+                            style={{backgroundColor:"#00072b"}}>
+                      <Row>
+
+                        <Col className="justify-content-center d-flex">
+                          
+                                  <Card  style={{/*backgroundImage:"linear-gradient(to right,#D4D9DD, #FFFBFF  )",*/
+                                  height:"120px",width:"120px",borderRadius:"50%",
+                                  /*border:"solid #D1D2D3",*/backgroundColor:'#91d153'}}>
+                                      <Row className="p-3">
+                                          <Col>
+                                          <Card className="text-center"  style={{backgroundColor:"#001642",border:"solid #fff",
+                                          height:"90px",width:"90px",borderRadius:"50%",marginLeft:"-2px",marginTop:"-2px"}}>
+                                              <CardBody className="justify-content-center d-flex  ">
+                                                  
+                                                  <Row className=" mt-2 justify-content-center d-flex align-items-center">
+                                                    <h4 className="text-white">1000</h4>
+                                                  </Row>
+                                                  
+                                              </CardBody>
+                                          </Card>
+                                          </Col>
+                                      </Row>
+                                      <Row className="justify-content-center">
+                                        <h6 className="text-white">Offer Provided</h6>
+                                      </Row>
+                                    
+                                  </Card>
+                       
+                          
+                        </Col>
+                        <Col className="justify-content-center d-flex" >
+                                  <Card  style={{/*backgroundImage:"linear-gradient(to right,#D4D9DD, #FFFBFF  )",*/
+                                  height:"120px",width:"120px",borderRadius:"50%",
+                                  /*border:"solid #D1D2D3",*/backgroundColor:'#91d153'}}>
+                                      <Row className="p-3">
+                                          <Col>
+                                          <Card className="text-center"  style={{backgroundColor:"#001642",border:"solid #fff",
+                                          height:"90px",width:"90px",borderRadius:"50%",marginLeft:"-2px",marginTop:"-2px"}}>
+                                              <CardBody className="justify-content-center d-flex  ">
+                                                  
+                                                  <Row className=" mt-2 justify-content-center d-flex align-items-center">
+                                                    <h4 className="text-white">1000</h4>
+                                                  </Row>
+                                                  
+                                              </CardBody>
+                                          </Card>
+                                          </Col>
+                                      </Row>
+                                      <Row className="justify-content-center">
+                                        <h6 className="text-white">Offer Accepted</h6>
+                                      </Row>
+                                    
+                                  </Card>
+                        </Col>
+                        <Col className="justify-content-center d-flex" >
+                                  <Card  style={{/*backgroundImage:"linear-gradient(to right,#D4D9DD, #FFFBFF  )",*/
+                                  height:"120px",width:"120px",borderRadius:"50%",
+                                  /*border:"solid #D1D2D3",*/backgroundColor:'#91d153'}}>
+                                      <Row className="p-3">
+                                          <Col>
+                                          <Card className="text-center"  style={{backgroundColor:"#001642",border:"solid #fff",
+                                          height:"90px",width:"90px",borderRadius:"50%",marginLeft:"-2px",marginTop:"-2px"}}>
+                                              <CardBody className="justify-content-center d-flex  ">
+                                                  
+                                                  <Row className=" mt-2 justify-content-center d-flex align-items-center">
+                                                    <h4 className="text-white">1000</h4>
+                                                  </Row>
+                                                  
+                                              </CardBody>
+                                          </Card>
+                                          </Col>
+                                      </Row>
+                                      <Row className="justify-content-center">
+                                        <h6 className="text-white">Offer Ratio</h6>
+                                      </Row>
+                                    
+                                  </Card>
+                        </Col>
+                      </Row>
+                      
+                    </Card>
+                  </Col>
+                 </Row>
+                </Card>
+                </Col>
                
                 </Row>
                 
@@ -957,6 +1096,9 @@ export default function Dash(){
                    </Card>
                   </Col>
                 </Row>
+
+
+                
             </div>
         </div>
     );

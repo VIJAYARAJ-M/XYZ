@@ -10,11 +10,11 @@ import ReactMultiSelectCheckboxes from "react-multiselect-checkboxes"
 const options = [{
   "id": 1,
   "value": "9ce42304-b732-4791-9731-6f299b6df8c7",
-  "label": "Infosys"
+  "label": "GS"
 }, {
   "id": 2,
   "value": "90419f06-7d07-45c8-bcec-d675096fe27f",
-  "label": "Zoho"
+  "label": "Blue base"
 }, {
   "id": 3,
   "value": "a23521da-0a48-4ef6-baa2-d727704f65c2",
@@ -22,7 +22,7 @@ const options = [{
 }, {
   "id": 4,
   "value": "34b2b58a-0123-49e2-b2de-1eef0922139b",
-  "label": "Wibro"
+  "label": "Xo"
 },]
 
 const series4 = [{
