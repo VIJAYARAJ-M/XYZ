@@ -929,6 +929,9 @@ export default function Dash(){
                     <Card className="p-4" 
                             style={{backgroundColor:"#00072b"}}>
                       <Row>
+                        <h3 className="text-white">Offers Summary</h3>
+                      </Row>
+                      <Row className="mt-2">
 
                         <Col className="justify-content-center d-flex">
                           
@@ -942,7 +945,7 @@ export default function Dash(){
                                               <CardBody className="justify-content-center d-flex  ">
                                                   
                                                   <Row className=" mt-2 justify-content-center d-flex align-items-center">
-                                                    <h4 className="text-white">1000</h4>
+                                                    <h4 className="text-white">23</h4>
                                                   </Row>
                                                   
                                               </CardBody>
@@ -968,7 +971,7 @@ export default function Dash(){
                                               <CardBody className="justify-content-center d-flex  ">
                                                   
                                                   <Row className=" mt-2 justify-content-center d-flex align-items-center">
-                                                    <h4 className="text-white">1000</h4>
+                                                    <h4 className="text-white">18</h4>
                                                   </Row>
                                                   
                                               </CardBody>
@@ -992,7 +995,7 @@ export default function Dash(){
                                               <CardBody className="justify-content-center d-flex  ">
                                                   
                                                   <Row className=" mt-2 justify-content-center d-flex align-items-center">
-                                                    <h4 className="text-white">1000</h4>
+                                                    <h4 className="text-white">79%</h4>
                                                   </Row>
                                                   
                                               </CardBody>
