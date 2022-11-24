@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import classnames from "classnames";
 import Chart from "chart.js";
 import {FcPicture} from "react-icons/fc"
+
 import "../../views/Card.css";
 import {
   Button,
@@ -354,7 +355,7 @@ const series2= [ {
     },
   }
   
-  const seriesdonut= [55, 40, 30, 20, 10]
+  const seriesdonut= [50,50]
   const optionsdonut = {
                 chart: {
                   type: 'donut',
@@ -362,8 +363,8 @@ const series2= [ {
                 stroke: {
                   width: 0
                 },
-                labels: ['CV Sent', '1st Interview', '2nd Interview', '3rd Interview', 'Offers'],
-                colors: ['#00cccc','#adb2bd',  '#007bff','#6f42c1','#17a2b8',],
+                labels: ['Male', 'Female'],
+                colors: ['#00cccc','#adb2bd'],
                 legend: {
                   display: true,
                   position: "bottom",
@@ -385,8 +386,8 @@ const series2= [ {
               }
               
   const series4 = [{
-                name: 'Deal Count',
-                data: [44, 55, 57, 56, 61, 58, 63, 60, 66,55,64,53,]
+                name: 'Department Count',
+                data: [12, 8, 14, 6, 17, 7,10]
               }]
   const options4 = {
                 chart: {
@@ -397,7 +398,7 @@ const series2= [ {
                   },
                 },
                 title: {
-                  text: 'Monthly Custom Calculations',
+                  text: 'Applications Received by Department',
                   align: 'center',
                   style:{
                     color:"white",
@@ -424,7 +425,7 @@ const series2= [ {
                   colors: ['transparent']
                 },
                 xaxis: {
-                  categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct','Oct','Nev','Dec'],
+                  categories: ['Java', 'Analyst', 'Python', 'C++', 'Associate', 'Marketing', 'Account' ],
                   labels:{
                     style:{
                       colors:"white",
@@ -460,7 +461,89 @@ const series2= [ {
                 tooltip: {
                   y: {
                     formatter: function (val) {
-                      return  val + "%"
+                      return  val + ""
+                    }
+                  }
+                }
+              }
+
+const Ageseries4 = [{
+  name: 'Age Count',
+  data: [12, 8, 14, 6, 17, 7,10]
+}]
+const Ageoptions = {
+                chart: {
+                  type: 'bar',
+                  height: 350,
+                  toolbar: {
+                    show: !1
+                  },
+                },
+                title: {
+                  text: 'Applications Age',
+                  align: 'center',
+                  style:{
+                    color:"white",
+                  
+                    
+                  },
+                  
+                },
+                colors:['#6f42c1'],
+                plotOptions: {
+                  bar: {
+                    horizontal: false,
+                    columnWidth: '55%',
+                    endingShape: 'rounded'
+                  },
+                },
+                dataLabels: {
+                  enabled: false,
+                  
+                },
+                stroke: {
+                  show: true,
+                  width: 2,
+                  colors: ['transparent']
+                },
+                xaxis: {
+                  categories: ['20-25', '25-30', '35-40', '40-45', '45-50', '50-55', '55-60' ],
+                  labels:{
+                    style:{
+                      colors:"white",
+                      
+                    },
+              },
+                },
+                yaxis: {
+                  /*title: {
+                    text: "hi",
+                    align: 'left',
+                    margin: 10,
+                    offsetX: 0,
+                    offsetY: 0,
+                    floating: false,
+                    style: {
+                      fontSize:  '14px',
+                      fontWeight:  'bold',
+                      fontFamily:  undefined,
+                      color:  '#fff',
+                    },
+                },*/
+                  labels:{
+                      style:{
+                        colors:"white",
+                        
+                      },
+                },
+                },
+                fill: {
+                  opacity: 1
+                },
+                tooltip: {
+                  y: {
+                    formatter: function (val) {
+                      return  val + ""
                     }
                   }
                 }
@@ -530,6 +613,51 @@ const series2= [ {
                 offers:"1",
               },
               ]
+  const table2 = [
+    {
+      name:"vijay",
+      email:'vijay@gamil.com',
+      title:"developer",
+      date:"20-12-2022",
+      status:"Application"
+    },
+    {
+      name:"jacob",
+      email:'jacob@gamil.com',
+      title:"Analyst",
+      date:"20-12-2022",
+      status:"2nd Interview"
+    },
+    {
+      name:"Dhinesh",
+      email:'Dhinesh@gamil.com',
+      title:"Associate",
+      date:"20-12-2022",
+      status:"3rd Interview"
+    },
+    {
+      name:"Dhinesh",
+      email:'Dhinesh@gamil.com',
+      title:"Associate",
+      date:"20-12-2022",
+      status:"3rd Interview"
+    },
+    {
+      name:"Dhinesh",
+      email:'Dhinesh@gamil.com',
+      title:"Associate",
+      date:"20-12-2022",
+      status:"3rd Interview"
+    },
+    {
+      name:"Dhinesh",
+      email:'Dhinesh@gamil.com',
+      title:"Associate",
+      date:"20-12-2022",
+      status:"3rd Interview"
+    },
+  ]
+  
 const departmentseries = [44, 55, 30, 40, 3]
 const departmentoptions = {
                 chart: {
@@ -658,8 +786,7 @@ const renderCard = (card, index) => {
                 );
               };
               
-            
-                       
+   
               
   
   /*const selectionRange = {
@@ -828,8 +955,8 @@ export default function Dash(){
                             </Card>
                             </Col>
                 </Row>
-                <Row className="mt-2 no-gutters ">
-                <Col lg={6} className="p-1">
+                <Row className="mt-2  ">
+                <Col lg={6} className="">
                 <Card className="p-1" style={{backgroundColor: "#002151"}} >
 
                         
@@ -922,7 +1049,7 @@ export default function Dash(){
                         
                     </Card>
                 </Col>
-                <Col className="p-1">
+                <Col className="">
                 <Card className="p-1" style={{backgroundColor: "#002151"}}>
                  <Row>
                   <Col>
@@ -1024,9 +1151,9 @@ export default function Dash(){
                 <Row className="mt-3">
                 
                 <Col >
-                    <Card className="p-1" style={{backgroundColor:'#002151'}}>
-                    <Row className=" no-gutters ">
-                        <Col className="mb-5 mb-xl-0 p-1" xl="8" style={{}}>
+                    <Card className="" style={{backgroundColor:'#002151'}}>
+                   
+                        <Col className="mb-5 mb-xl-0 p-1" xl="12" style={{}}>
                             <Card className="" style={{boxShadow:"",backgroundColor:"#00072b",height:"400px",
                             /*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
                             border:"0px"
@@ -1046,9 +1173,9 @@ export default function Dash(){
                             </CardHeader>
                             <Table className="align-items-center  table-flush" responsive >
                             <thead >
-                            <tr className="" style={{color:"#FFB178"}}>
+                            <tr className="" style={{color:"#91cf57", backgroundColor:"#26385c"}}>
                                 <th scope="col">Company Name</th>
-                                <th className=" justify-content-center d-flex" scope="col">Role</th>
+                                <th className=" " scope="col">Role</th>
                                 <th scope="col">Applicant</th>
                                 <th scope="col">1st Interview</th>
                                 <th scope="col">2nd Interview</th>
@@ -1059,9 +1186,9 @@ export default function Dash(){
                             {table1.map((item, index)=>(
                             <tbody   >
                             <tr key={index} className="text-white  " >
-                                <td className="justify-content-center d-flex" scope="">{item.company}</td>
+                                <td className="" scope="">{item.company}</td>
                                 <td >{item.role}</td>
-                                <td className="justify-content-center d-flex">{item.applicant}</td>
+                                <td className="">{item.applicant}</td>
                                 <td >{item.firstInterview}</td>
                                 <td>{item.seconsinterview}</td>
                                 <td>{item.thirdinterview}</td>
@@ -1078,28 +1205,189 @@ export default function Dash(){
                         </Table>
                             </Card>
                         </Col>
-                        <Col xl={4} className="p-1">
-                        <Card className="p-4" style={{backgroundColor:"#00072b"}}>
-                            <ReactApexChart options={optionsdonut} series={seriesdonut} type="donut" height={380} />
-                        </Card>
-                        </Col>
+                       
                         
-                    </Row>
+                   
                     </Card>
                 </Col>
                 
                 </Row>
 
-                <Row>
-                  <Col lg={4}>
-                   <Card style={{backgroundColor:"#00072b"}}>
-                   <ReactApexChart options={departmentoptions} series={departmentseries} type="donut" width={380} />
+                <Row className="mt-3">
+                  <Col>
+                    <Card className="p-1" style={{backgroundColor: "#002151"}}>
+                      <Row className="">
+                        <Col lg={5}>
+                        <Card className="p-3" style={{backgroundColor:"#00072b",margin:""}}>
+                        
+                          <Row>
+                            <Col className="justify-content-center d-flex">
+                            
+                            <BsStack color="#19335A" size="4rem"/>
+                            
+                            </Col>
+                          </Row>
+                          <Row className="m-3">
+                            <Col className="justify-content-center d-flex">
+                            
+                            <h1 className="text-white">Offers Acceptance Ratio</h1>
+                            
+                            </Col>
+                          </Row>
+                          <Row className="m-3">
+                            <Col className="justify-content-center d-flex">
+                            <Card className="justify-content-center align-items-center" 
+                            style={{height:"40px", width:"60px", backgroundColor:"#19335A"}}>
+                            <h1 className="text-white" style={{color:""}}>44%</h1>
+                            </Card>
+                            </Col>
 
-    
-                   </Card>
+                          </Row>
+                          <Row className="m-3">
+                            <Col className="">
+                            <Card style={{backgroundColor:"#00072b"}}>
+                                <Row>
+                                  <Col className="justify-content-center d-flex">
+                                  <h3 className="text-white">Offers Provided</h3>
+                                  </Col>
+                                </Row>
+                                <Row className="mt-3">
+                                  <Col className="justify-content-center d-flex">
+                                  <Card className="justify-content-center align-items-center" 
+                                    style={{height:"40px", width:"60px", backgroundColor:"#19335A"}}>
+                                    <h1 className="text-white">23</h1>
+                                  </Card>
+                                  </Col>
+                                </Row>
+                            </Card>
+                            </Col>
+                            <Col>
+                            <Card style={{backgroundColor:"#00072b"}}>
+                                <Row>
+                                  <Col className="justify-content-center d-flex">
+                                  <h3 className="text-white">Offers Accepted</h3>
+                                  </Col>
+                                </Row>
+                                <Row className="mt-3">
+                                  <Col className="justify-content-center d-flex">
+                                  <Card className="justify-content-center align-items-center" 
+                                    style={{height:"40px", width:"60px", backgroundColor:"#19335A"}}>
+                                    <h1 className="text-white">18</h1>
+                                  </Card>
+                                  </Col>
+                                </Row>
+                            </Card>
+                            </Col>
+                          </Row>
+                        </Card>
+                        </Col>
+                       
+                          
+                        
+                              <Col className="mb-5 mb-xl-0 " xl="" style={{}}>
+                                  <Card className="" style={{boxShadow:"",backgroundColor:"#00072b",height:"373px",
+                                  /*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
+                                  border:"0px"
+                                  /*boxShadow:"10px 10px 15px #9b9b9b, -10px -10px 15px #ffffff"*/
+                                  /*boxShadow:"inset 2px 2px 5px #e7e7e7, inset -3px -3px 7px #bbbec3",backgroundColor:"#F8F8F8"*/}}>
+                                  <CardHeader className="border-0" 
+                                  style={{ backgroundColor:"#00072b",/*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
+                                  border:"0px"}}>
+                                      <Row className="align-items-center">
+                                      <div className="col">
+                                          <h3 className="mb-0 text-white">Applicant Details</h3>
+                                      </div>
+                                      
+                                      </Row>
+                                  
+                                  
+                                  </CardHeader>
+                                  <Table className="align-items-center  table-flush" responsive >
+                                  <thead >
+                                  <tr className="" style={{color:"#91cf57", backgroundColor:"#26385c"}}>
+                                      <th scope="col">Applicant Name</th>
+                                      
+                                      <th scope="col">E-Mail</th>
+                                      <th scope="col">Job Title</th>
+                                      <th scope="col">Job Applied Date</th>
+                                      <th scope="col">Current Status</th>
+                                      
+                                  </tr>
+                                  </thead>
+                                  {table2.map((item, index)=>(
+                                  <tbody   >
+                                  <tr key={index} className="text-white  " >
+                                      <td className="" scope="">{item.name}</td>
+                                      <td >{item.email}</td>
+                                      <td className="">{item.title}</td>
+                                      <td >{item.date}</td>
+                                      <td>{item.status}</td>
+                                      
+                                  
+                                  </tr>
+                              
+                              
+                              
+                                  
+                                  </tbody>
+                                  ))}
+                              </Table>
+                                  </Card>
+                              </Col>
+                            
+                              
+                        
+                      
+                      </Row>
+                    </Card>
                   </Col>
                 </Row>
 
+                <Row className="mt-3">
+                
+              
+                
+                </Row> 
+
+                <Row>
+                  <Col lg={4}>
+                   <Card className="p-1" style={{backgroundColor: "#002151"}}>
+                      <Row className="">
+                        <Col>
+                        <Card className="p-4" style={{backgroundColor:"#00072b"}}>
+                          <ReactApexChart options={options4} series={series4} type="bar" height={280} />
+                        </Card>
+                        </Col>
+                      </Row>
+                    </Card>
+                  </Col>
+
+                  <Col lg={4}>
+                   <Card className="p-1" style={{backgroundColor: "#002151"}}>
+                      <Row className="">
+                        <Col>
+                        <Card className="p-4" style={{backgroundColor:"#00072b"}}>
+                          <ReactApexChart options={Ageoptions} series={Ageseries4} type="bar" height={280} />
+                        </Card>
+                        </Col>
+                      </Row>
+                    </Card>
+                  </Col>
+
+                  <Col lg={4}>
+                   <Card className="p-1" style={{backgroundColor: "#002151"}}>
+                      <Row className="">
+                        <Col>
+                        <Card className="p-4" style={{backgroundColor:"#00072b"}}>
+                        <ReactApexChart options={optionsdonut} series={seriesdonut} type="donut" height={320} />
+                        </Card>
+                        </Col>
+                      </Row>
+                    </Card>
+                  </Col>
+                </Row>
+
+              
 
                 
             </div>
