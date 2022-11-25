@@ -657,6 +657,51 @@ const Ageoptions = {
       status:"3rd Interview"
     },
   ]
+
+  const hiring = [
+    {
+      job:"developer",
+      candidates:"vijay",
+      status:"Application",
+      notes:'2022',
+      submitted:"20-12-2022"
+    },
+    {
+      job:"Python",
+      candidates:"jacob",
+      status:"Application",
+      notes:'2022',
+      submitted:"24-12-2022"
+    },
+    {
+      job:"Analyst",
+      candidates:"vijay",
+      status:"Application",
+      notes:'2022',
+      submitted:"20-12-2022"
+    },
+    {
+      job:"Reactjs",
+      candidates:"Dhinesh",
+      status:"Application",
+      notes:'2022',
+      submitted:"20-12-2022"
+    },
+    {
+      job:"developer",
+      candidates:"vijay",
+      status:"Application",
+      notes:'2022',
+      submitted:"20-12-2022"
+    },
+    {
+      job:"developer",
+      candidates:"vijay",
+      status:"Application",
+      notes:'2022',
+      submitted:"20-12-2022"
+    },
+  ]
   
 const departmentseries = [44, 55, 30, 40, 3]
 const departmentoptions = {
@@ -1049,10 +1094,10 @@ export default function Dash(){
                         
                     </Card>
                 </Col>
-                <Col className="">
+                <Col lg={6} className="">
                 <Card className="p-1" style={{backgroundColor: "#002151"}}>
                  <Row>
-                  <Col>
+                  <Col >
                     <Card className="p-4" 
                             style={{backgroundColor:"#00072b"}}>
                       <Row>
@@ -1140,6 +1185,58 @@ export default function Dash(){
                     </Card>
                   </Col>
                  </Row>
+                 <Row className="mt-3">
+                 <Col className="mb-5 mb-xl-0 " xl="" style={{}}>
+                                  <Card className="" style={{boxShadow:"",backgroundColor:"#00072b",height:"353px",
+                                  /*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
+                                  border:"0px"
+                                  /*boxShadow:"10px 10px 15px #9b9b9b, -10px -10px 15px #ffffff"*/
+                                  /*boxShadow:"inset 2px 2px 5px #e7e7e7, inset -3px -3px 7px #bbbec3",backgroundColor:"#F8F8F8"*/}}>
+                                  <CardHeader className="border-0" 
+                                  style={{ backgroundColor:"#00072b",/*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
+                                  border:"0px"}}>
+                                      <Row className="align-items-center">
+                                      <div className="col">
+                                          <h3 className="mb-0 text-white">Applicant Details</h3>
+                                      </div>
+                                      
+                                      </Row>
+                                  
+                                  
+                                  </CardHeader>
+                                  <Table className="align-items-center  table-flush" responsive >
+                                  <thead >
+                                  <tr className="" style={{color:"#91cf57", backgroundColor:"#26385c"}}>
+                                      <th scope="col">Applicant Name</th>
+                                      
+                                      <th scope="col">E-Mail</th>
+                                      <th scope="col">Job Title</th>
+                                      <th scope="col">Job Applied Date</th>
+                                      <th scope="col">Current Status</th>
+                                      
+                                  </tr>
+                                  </thead>
+                                  {table2.map((item, index)=>(
+                                  <tbody   >
+                                  <tr key={index} className="text-white  " >
+                                      <td className="" scope="">{item.name}</td>
+                                      <td >{item.email}</td>
+                                      <td className="">{item.title}</td>
+                                      <td >{item.date}</td>
+                                      <td>{item.status}</td>
+                                      
+                                  
+                                  </tr>
+                              
+                              
+                              
+                                  
+                                  </tbody>
+                                  ))}
+                              </Table>
+                                  </Card>
+                              </Col>
+                 </Row>
                 </Card>
                 </Col>
                
@@ -1150,9 +1247,10 @@ export default function Dash(){
 
                 <Row className="mt-3">
                 
-                <Col >
+                <Col lg={12} >
+              
                     <Card className="" style={{backgroundColor:'#002151'}}>
-                   
+                    
                         <Col className="mb-5 mb-xl-0 p-1" xl="12" style={{}}>
                             <Card className="" style={{boxShadow:"",backgroundColor:"#00072b",height:"400px",
                             /*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
@@ -1205,10 +1303,11 @@ export default function Dash(){
                         </Table>
                             </Card>
                         </Col>
-                       
+                         
                         
                    
                     </Card>
+                    
                 </Col>
                 
                 </Row>
