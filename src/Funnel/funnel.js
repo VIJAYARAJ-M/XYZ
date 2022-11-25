@@ -74,7 +74,7 @@ function FeaturedInfo() {
       data: data,
       displayPercent: true,
       direction: "Horizontal",
-      width: 590,
+      width: 920,
       height: 150,
       subLabelValue: "values"
     });

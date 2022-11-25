@@ -539,7 +539,7 @@ const Index = (props) => {
       <Container className="pb-8 pt-5 pt-md-8" fluid style={{backgroundColor:"#19335A"}}>
 
         
-        <Tabs defaultActiveKey="home" className="mt--4">
+        <Tabs defaultActiveKey="pipeline" className="mt--4">
           <Tab eventKey="home" title="Home">
            <Home/>
           </Tab>

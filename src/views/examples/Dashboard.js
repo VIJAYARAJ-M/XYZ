@@ -1001,7 +1001,7 @@ export default function Dash(){
                             </Col>
                 </Row>
                 <Row className="mt-2  ">
-                <Col lg={6} className="">
+                <Col lg={9} className="">
                 <Card className="p-1" style={{backgroundColor: "#002151"}} >
 
                         
@@ -1054,7 +1054,7 @@ export default function Dash(){
                                     
                                         ))}
                             </Row>
-                            <Row className="" style={{marginTop:"72px"}}>
+                            <Row className="mt-5" style={{marginTop:""}}>
                             <Col className="mb-5 mb-xl-0" xl="12" >
                             <Card className="cardbody " 
                             style={{/*boxShadow:"8px 8px 7px 0px rgb( 120 120 120/ 80%), -5px -6px 5px 0 rgb(255 255 255 / 90%)"*/
@@ -1073,9 +1073,9 @@ export default function Dash(){
                             </Col>
                             
                             </Row>
-                            <Row className="mt-2"> 
+                            <Row className="mt-0"> 
                                 <Col className=""> 
-                                <Card className="p-3  " 
+                                <Card className=" " 
                                 style={{height:"80px",backgroundColor:"#00072b",
                                                 /*boxShadow:"10px 10px 15px #9b9b9b, -10px -10px 15px #ffffff"*/
                                                 /*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
@@ -1094,149 +1094,78 @@ export default function Dash(){
                         
                     </Card>
                 </Col>
-                <Col lg={6} className="">
+                <Col lg={3} className="">
                 <Card className="p-1" style={{backgroundColor: "#002151"}}>
+                 
                  <Row>
-                  <Col >
-                    <Card className="p-4" 
-                            style={{backgroundColor:"#00072b"}}>
-                      <Row>
-                        <h3 className="text-white">Offers Summary</h3>
-                      </Row>
-                      <Row className="mt-2">
+                 <Col className="" >
+                        <Card className="p-3" style={{backgroundColor:"#00072b",margin:""}}>
+                        
+                          <Row className="" style={{marginTop:""}}>
+                            <Col className="justify-content-center d-flex">
+                            
+                            <BsStack color="#93d04d" size="4rem"/>
+                            
+                            </Col>
+                          </Row>
+                          <Row className="mt-5">
+                            <Col className="justify-content-center d-flex">
+                            
+                            <h3 className="text-white">Offers Acceptance Ratio</h3>
+                            
+                            </Col>
+                          </Row>
+                          <Row className="mt-5">
+                            <Col className="justify-content-center d-flex">
+                            <Card className="justify-content-center align-items-center" 
+                            style={{height:"auto", width:"147px", backgroundColor:"#19335A"}}>
+                            <h1 className="text-white" style={{color:"", fontSize:"40px"}}>44%</h1>
+                            </Card>
+                            </Col>
 
-                        <Col className="justify-content-center d-flex">
-                          
-                                  <Card  style={{/*backgroundImage:"linear-gradient(to right,#D4D9DD, #FFFBFF  )",*/
-                                  height:"120px",width:"120px",borderRadius:"50%",
-                                  /*border:"solid #D1D2D3",*/backgroundColor:'#91d153'}}>
-                                      <Row className="p-3">
-                                          <Col>
-                                          <Card className="text-center"  style={{backgroundColor:"#001642",border:"solid #fff",
-                                          height:"90px",width:"90px",borderRadius:"50%",marginLeft:"-2px",marginTop:"-2px"}}>
-                                              <CardBody className="justify-content-center d-flex  ">
-                                                  
-                                                  <Row className=" mt-2 justify-content-center d-flex align-items-center">
-                                                    <h4 className="text-white">23</h4>
-                                                  </Row>
-                                                  
-                                              </CardBody>
-                                          </Card>
-                                          </Col>
-                                      </Row>
-                                      <Row className="justify-content-center">
-                                        <h6 className="text-white">Offer Provided</h6>
-                                      </Row>
-                                    
+                          </Row>
+                          <Row className="" style={{marginTop:"154px"}}>
+                            <Col className="">
+                            <Card style={{backgroundColor:"#00072b"}}>
+                            <Row >
+                                  <Col className="justify-content-center d-flex">
+                                  <Card className="justify-content-center align-items-center" 
+                                    style={{height:"50px", width:"86px", backgroundColor:"#19335A"}}>
+                                    <h1 className="text-white">23</h1>
                                   </Card>
-                       
-                          
-                        </Col>
-                        <Col className="justify-content-center d-flex" >
-                                  <Card  style={{/*backgroundImage:"linear-gradient(to right,#D4D9DD, #FFFBFF  )",*/
-                                  height:"120px",width:"120px",borderRadius:"50%",
-                                  /*border:"solid #D1D2D3",*/backgroundColor:'#91d153'}}>
-                                      <Row className="p-3">
-                                          <Col>
-                                          <Card className="text-center"  style={{backgroundColor:"#001642",border:"solid #fff",
-                                          height:"90px",width:"90px",borderRadius:"50%",marginLeft:"-2px",marginTop:"-2px"}}>
-                                              <CardBody className="justify-content-center d-flex  ">
-                                                  
-                                                  <Row className=" mt-2 justify-content-center d-flex align-items-center">
-                                                    <h4 className="text-white">18</h4>
-                                                  </Row>
-                                                  
-                                              </CardBody>
-                                          </Card>
-                                          </Col>
-                                      </Row>
-                                      <Row className="justify-content-center">
-                                        <h6 className="text-white">Offer Accepted</h6>
-                                      </Row>
-                                    
+                                  </Col>
+                                </Row>
+                                <Row className="mt-3">
+                                  <Col className="justify-content-center d-flex">
+                                  <h4 className="text-white">Offers Provided</h4>
+                                  </Col>
+                                </Row>
+                                
+                            </Card>
+                            </Col>
+                            <Col>
+                            <Card style={{backgroundColor:"#00072b"}}>
+                                
+                                <Row >
+                                  <Col className="justify-content-center d-flex">
+                                  <Card className="justify-content-center align-items-center" 
+                                    style={{height:"50px", width:"86px", backgroundColor:"#19335A"}}>
+                                    <h1 className="text-white">18</h1>
                                   </Card>
+                                  </Col>
+                                </Row>
+                                <Row className="mt-3">
+                                  <Col className="justify-content-center d-flex">
+                                  <h4 className="text-white">Offers Accepted</h4>
+                                  </Col>
+                                </Row>
+                            </Card>
+                            </Col>
+                          </Row>
+                        </Card>
                         </Col>
-                        <Col className="justify-content-center d-flex" >
-                                  <Card  style={{/*backgroundImage:"linear-gradient(to right,#D4D9DD, #FFFBFF  )",*/
-                                  height:"120px",width:"120px",borderRadius:"50%",
-                                  /*border:"solid #D1D2D3",*/backgroundColor:'#91d153'}}>
-                                      <Row className="p-3">
-                                          <Col>
-                                          <Card className="text-center"  style={{backgroundColor:"#001642",border:"solid #fff",
-                                          height:"90px",width:"90px",borderRadius:"50%",marginLeft:"-2px",marginTop:"-2px"}}>
-                                              <CardBody className="justify-content-center d-flex  ">
-                                                  
-                                                  <Row className=" mt-2 justify-content-center d-flex align-items-center">
-                                                    <h4 className="text-white">79%</h4>
-                                                  </Row>
-                                                  
-                                              </CardBody>
-                                          </Card>
-                                          </Col>
-                                      </Row>
-                                      <Row className="justify-content-center">
-                                        <h6 className="text-white">Offer Ratio</h6>
-                                      </Row>
-                                    
-                                  </Card>
-                        </Col>
-                      </Row>
-                      
-                    </Card>
-                  </Col>
                  </Row>
-                 <Row className="mt-3">
-                 <Col className="mb-5 mb-xl-0 " xl="" style={{}}>
-                                  <Card className="" style={{boxShadow:"",backgroundColor:"#00072b",height:"353px",
-                                  /*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
-                                  border:"0px"
-                                  /*boxShadow:"10px 10px 15px #9b9b9b, -10px -10px 15px #ffffff"*/
-                                  /*boxShadow:"inset 2px 2px 5px #e7e7e7, inset -3px -3px 7px #bbbec3",backgroundColor:"#F8F8F8"*/}}>
-                                  <CardHeader className="border-0" 
-                                  style={{ backgroundColor:"#00072b",/*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
-                                  border:"0px"}}>
-                                      <Row className="align-items-center">
-                                      <div className="col">
-                                          <h3 className="mb-0 text-white">Applicant Details</h3>
-                                      </div>
-                                      
-                                      </Row>
-                                  
-                                  
-                                  </CardHeader>
-                                  <Table className="align-items-center  table-flush" responsive >
-                                  <thead >
-                                  <tr className="" style={{color:"#91cf57", backgroundColor:"#26385c"}}>
-                                      <th scope="col">Applicant Name</th>
-                                      
-                                      <th scope="col">E-Mail</th>
-                                      <th scope="col">Job Title</th>
-                                      <th scope="col">Job Applied Date</th>
-                                      <th scope="col">Current Status</th>
-                                      
-                                  </tr>
-                                  </thead>
-                                  {table2.map((item, index)=>(
-                                  <tbody   >
-                                  <tr key={index} className="text-white  " >
-                                      <td className="" scope="">{item.name}</td>
-                                      <td >{item.email}</td>
-                                      <td className="">{item.title}</td>
-                                      <td >{item.date}</td>
-                                      <td>{item.status}</td>
-                                      
-                                  
-                                  </tr>
-                              
-                              
-                              
-                                  
-                                  </tbody>
-                                  ))}
-                              </Table>
-                                  </Card>
-                              </Col>
-                 </Row>
+                
                 </Card>
                 </Col>
                
@@ -1247,17 +1176,17 @@ export default function Dash(){
 
                 <Row className="mt-3">
                 
-                <Col lg={12} >
+                <Col lg={8} >
               
                     <Card className="" style={{backgroundColor:'#002151'}}>
                     
                         <Col className="mb-5 mb-xl-0 p-1" xl="12" style={{}}>
                             <Card className="" style={{boxShadow:"",backgroundColor:"#00072b",height:"400px",
                             /*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
-                            border:"0px"
+                            border:""
                             /*boxShadow:"10px 10px 15px #9b9b9b, -10px -10px 15px #ffffff"*/
                             /*boxShadow:"inset 2px 2px 5px #e7e7e7, inset -3px -3px 7px #bbbec3",backgroundColor:"#F8F8F8"*/}}>
-                            <CardHeader className="border-0" 
+                            <CardHeader className="" 
                             style={{ backgroundColor:"#00072b",/*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
                             border:"0px"}}>
                                 <Row className="align-items-center">
@@ -1284,7 +1213,7 @@ export default function Dash(){
                             {table1.map((item, index)=>(
                             <tbody   >
                             <tr key={index} className="text-white  " >
-                                <td className="" scope="">{item.company}</td>
+                                <td className=""  scope="">{item.company}</td>
                                 <td >{item.role}</td>
                                 <td className="">{item.applicant}</td>
                                 <td >{item.firstInterview}</td>
@@ -1309,6 +1238,22 @@ export default function Dash(){
                     </Card>
                     
                 </Col>
+                <Col lg={4}>
+                   <Card className="p-1" style={{backgroundColor: "#002151"}}>
+                      <Row className="">
+                        <Col>
+                        <Card className="p-4" style={{backgroundColor:"#00072b",}}>
+                        <Row>
+                          <h3 className="text-white">Gender Summary</h3>
+                        </Row>
+                        <Row className="mt-4 justify-content-center">
+                         <ReactApexChart options={optionsdonut} series={seriesdonut} type="donut" height={320} />
+                        </Row>
+                        </Card>
+                        </Col>
+                      </Row>
+                    </Card>
+                  </Col>
                 
                 </Row>
 
@@ -1316,74 +1261,10 @@ export default function Dash(){
                   <Col>
                     <Card className="p-1" style={{backgroundColor: "#002151"}}>
                       <Row className="">
-                        <Col lg={5}>
-                        <Card className="p-3" style={{backgroundColor:"#00072b",margin:""}}>
+                      
+                     
                         
-                          <Row>
-                            <Col className="justify-content-center d-flex">
-                            
-                            <BsStack color="#19335A" size="4rem"/>
-                            
-                            </Col>
-                          </Row>
-                          <Row className="m-3">
-                            <Col className="justify-content-center d-flex">
-                            
-                            <h1 className="text-white">Offers Acceptance Ratio</h1>
-                            
-                            </Col>
-                          </Row>
-                          <Row className="m-3">
-                            <Col className="justify-content-center d-flex">
-                            <Card className="justify-content-center align-items-center" 
-                            style={{height:"40px", width:"60px", backgroundColor:"#19335A"}}>
-                            <h1 className="text-white" style={{color:""}}>44%</h1>
-                            </Card>
-                            </Col>
-
-                          </Row>
-                          <Row className="m-3">
-                            <Col className="">
-                            <Card style={{backgroundColor:"#00072b"}}>
-                                <Row>
-                                  <Col className="justify-content-center d-flex">
-                                  <h3 className="text-white">Offers Provided</h3>
-                                  </Col>
-                                </Row>
-                                <Row className="mt-3">
-                                  <Col className="justify-content-center d-flex">
-                                  <Card className="justify-content-center align-items-center" 
-                                    style={{height:"40px", width:"60px", backgroundColor:"#19335A"}}>
-                                    <h1 className="text-white">23</h1>
-                                  </Card>
-                                  </Col>
-                                </Row>
-                            </Card>
-                            </Col>
-                            <Col>
-                            <Card style={{backgroundColor:"#00072b"}}>
-                                <Row>
-                                  <Col className="justify-content-center d-flex">
-                                  <h3 className="text-white">Offers Accepted</h3>
-                                  </Col>
-                                </Row>
-                                <Row className="mt-3">
-                                  <Col className="justify-content-center d-flex">
-                                  <Card className="justify-content-center align-items-center" 
-                                    style={{height:"40px", width:"60px", backgroundColor:"#19335A"}}>
-                                    <h1 className="text-white">18</h1>
-                                  </Card>
-                                  </Col>
-                                </Row>
-                            </Card>
-                            </Col>
-                          </Row>
-                        </Card>
-                        </Col>
-                       
-                          
-                        
-                              <Col className="mb-5 mb-xl-0 " xl="" style={{}}>
+                              <Col className="mb-5 mb-xl-0 " xl="8" style={{}}>
                                   <Card className="" style={{boxShadow:"",backgroundColor:"#00072b",height:"373px",
                                   /*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
                                   border:"0px"
@@ -1433,6 +1314,11 @@ export default function Dash(){
                               </Table>
                                   </Card>
                               </Col>
+                              <Col lg={4}>
+                        <Card className="p-4" style={{backgroundColor:"#00072b"}}>
+                          <ReactApexChart options={options4} series={series4} type="bar" height={306} />
+                        </Card>
+                        </Col>
                             
                               
                         
@@ -1442,51 +1328,87 @@ export default function Dash(){
                   </Col>
                 </Row>
 
+               
+
                 <Row className="mt-3">
+                  <Col lg={8}>
+                   <Card className="p-1" style={{backgroundColor: "#002151"}}>
+                      <Row className="">
+                      <Col className="mb-5 mb-xl-0 " xl="" style={{}}>
+                                  <Card className="" style={{boxShadow:"",backgroundColor:"#00072b",height:"353px",
+                                  /*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
+                                  border:"0px"
+                                  /*boxShadow:"10px 10px 15px #9b9b9b, -10px -10px 15px #ffffff"*/
+                                  /*boxShadow:"inset 2px 2px 5px #e7e7e7, inset -3px -3px 7px #bbbec3",backgroundColor:"#F8F8F8"*/}}>
+                                  <CardHeader className="border-0" 
+                                  style={{ backgroundColor:"#00072b",/*backgroundImage:"linear-gradient(to right, #133D7A 0%, #3759B2 100%)",*/
+                                  border:"0px"}}>
+                                      <Row className="align-items-center">
+                                      <div className="col">
+                                          <h3 className="mb-0 text-white">Recent Hiring Managers Reviews !</h3>
+                                      </div>
+                                      
+                                      </Row>
+                                  
+                                  
+                                  </CardHeader>
+                                  <Table className="align-items-center  table-flush" responsive >
+                                  <thead >
+                                  <tr className="" style={{color:"#91cf57", backgroundColor:"#26385c"}}>
+                                      <th scope="col">Applicant Name</th>
+                                      
+                                      <th scope="col">E-Mail</th>
+                                      <th scope="col">Job Title</th>
+                                      <th scope="col">Job Applied Date</th>
+                                      <th scope="col">Current Status</th>
+                                      
+                                  </tr>
+                                  </thead>
+                                  {table2.map((item, index)=>(
+                                  <tbody   >
+                                  <tr key={index} className="text-white  " >
+                                      <td className="" scope="">{item.name}</td>
+                                      <td >{item.email}</td>
+                                      <td className="">{item.title}</td>
+                                      <td >{item.date}</td>
+                                      <td>{item.status}</td>
+                                      
+                                  
+                                  </tr>
+                              
+                              
+                              
+                                  
+                                  </tbody>
+                                  ))}
+                              </Table>
+                                  </Card>
+                              </Col>
+                      </Row>
+                    </Card>
+                  </Col>
+
+                  <Col lg={4}>
+                   <Card className="p-1" style={{backgroundColor: "#002151"}}>
+                      <Row className="">
+                        <Col>
+                        <Card className="p-4" style={{backgroundColor:"#00072b"}}>
+                          <ReactApexChart options={Ageoptions} series={Ageseries4} type="bar" height={289} />
+                        </Card>
+                        </Col>
+                      </Row>
+                    </Card>
+                  </Col>
+
                 
-              
-                
-                </Row> 
-
-                <Row>
-                  <Col lg={4}>
-                   <Card className="p-1" style={{backgroundColor: "#002151"}}>
-                      <Row className="">
-                        <Col>
-                        <Card className="p-4" style={{backgroundColor:"#00072b"}}>
-                          <ReactApexChart options={options4} series={series4} type="bar" height={280} />
-                        </Card>
-                        </Col>
-                      </Row>
-                    </Card>
-                  </Col>
-
-                  <Col lg={4}>
-                   <Card className="p-1" style={{backgroundColor: "#002151"}}>
-                      <Row className="">
-                        <Col>
-                        <Card className="p-4" style={{backgroundColor:"#00072b"}}>
-                          <ReactApexChart options={Ageoptions} series={Ageseries4} type="bar" height={280} />
-                        </Card>
-                        </Col>
-                      </Row>
-                    </Card>
-                  </Col>
-
-                  <Col lg={4}>
-                   <Card className="p-1" style={{backgroundColor: "#002151"}}>
-                      <Row className="">
-                        <Col>
-                        <Card className="p-4" style={{backgroundColor:"#00072b"}}>
-                        <ReactApexChart options={optionsdonut} series={seriesdonut} type="donut" height={320} />
-                        </Card>
-                        </Col>
-                      </Row>
-                    </Card>
-                  </Col>
                 </Row>
 
-              
+
+                <Row className="mt-3">
+                 
+                 </Row>
+
+                 
 
                 
             </div>
